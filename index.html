@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --text-heading: #f0f6fc;
+      --accent: #58a6ff;
+      --accent-hover: #1f6feb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid var(--border);
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      color: var(--text-heading);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #8b949e;
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 0.75rem;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Projects Grid */
+    .section-title {
+      color: var(--text-heading);
+      font-size: 1.5rem;
+      margin: 2.5rem 0 1.5rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      border-color: #8b949e;
+    }
+
+    .project-card h3 {
+      color: var(--text-heading);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      color: #8b949e;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .project-btn {
+      align-self: flex-start;
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      font-size: 0.85rem;
+      border-radius: 6px;
+      background: #21262d;
+      color: var(--accent);
+      border: 1px solid var(--border);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .project-btn:hover {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Hero / Profile -->
+    <header class="hero">
+      <img src="https://github.com/identicons/user.png" alt="Profile Picture" class="avatar" />
+      <h1>Your Name</h1>
+      <p>Frontend Developer / Open Source Enthusiast</p>
+      <div class="links">
+        <a href="https://github.com/your-username" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/your-username" target="_blank">LinkedIn</a>
+        <a href="mailto:your-email@example.com">Email</a>
+      </div>
+    </header>
+
+    <!-- Projects Section -->
+    <main>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>A web application built to solve real-world problems. Clean code and responsive UI.</p>
+          <a href="#" class="project-btn" target="_blank">View Repo &rarr;</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>An API integration tool using modern web standards and minimal dependencies.</p>
+          <a href="#" class="project-btn" target="_blank">View Repo &rarr;</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Your Name. Hosted on GitHub Pages.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
